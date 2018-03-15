@@ -9,7 +9,7 @@ This is a game built to test the players memory. The player tries to match the i
 2. Click on another card and try to match icons.
 3. Match cards properly and the card stays placed up, not a match and the cards flip back down for you to try and find the right match.
 
-<b>What this game uses</b>
+<b>What this game uses</b></br>
 This game uses an HTML page, as well as CSS and JavaScript for functionality. The game can be played on all browsers.
 
 <b>Contributors</b></br>
