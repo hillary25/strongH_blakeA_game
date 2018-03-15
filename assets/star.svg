@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473 473">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4b79ad;
+      }
+
+      .cls-2 {
+        fill: #ffe843;
+      }
+
+      .cls-3 {
+        fill: #f2c453;
+      }
+    </style>
+  </defs>
+  <title>star</title>
+  <rect class="cls-1" width="473" height="473" rx="74.07" ry="74.07"/>
+  <polygon class="cls-2" points="236.26 85.06 285.32 184.45 395 200.39 315.63 277.75 334.37 386.99 236.26 335.42 138.16 386.99 156.9 277.75 77.53 200.39 187.21 184.45 236.26 85.06"/>
+  <polygon class="cls-3" points="138 387 236 249 157 278 138 387"/>
+  <polygon class="cls-3" points="78 200 236 249 236 85 187 184 78 200"/>
+  <polygon class="cls-3" points="395 200 236 249 285 184 395 200"/>
+  <polygon class="cls-3" points="236 335 334 387 236 249 236 335"/>
+</svg>
