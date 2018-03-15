@@ -4,19 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Starship Troopers HTML5 Game</title>
+  <title>Starship Troopers Memory Game</title>
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <main id="container">
-    <h1 class="hidden">Starship Troopers Game</h1>
-    
-    <!--All game elements & background go here-->
-    <section id="gameSpace">
-      <h2 class="hidden">Game stuff here</h2>
-    </section>
+ 	 <main id="container">
+		<header>
+			<h1>Starship Troopers Memory Game</h1>
+		</header>
+
+		<div class="timer">
+		</div>
+
+		<ul class="deck" id="card-deck">
+            <li class="card" type="helmet">
+                <i class="card-helmet"></i>
+            </li>
+            <li class="card" type="gun">
+                <i class="card-gun"></i>
+            </li>
+            <li class="card match" type="ship">
+                <i class="card-ship"></i>
+            </li>
+            <li class="card" type="star" >
+                <i class="card-star"></i>
+            </li>
+            <li class="card" type="title">
+                <i class="card-title"></i>
+            </li>
+            <li class="card match" type="ship">
+                <i class="card-ship"></i>
+            </li>
+            <li class="card" type="badge">
+                <i class="card-badge"></i>
+            </li>
+            <li class="card" type="trooper">
+                <i class="card-trooper"></i>
+            </li>
+            <li class="card" type="helmet">
+                <i class="card-helmet"></i>
+            </li>
+            <li class="card" type="planet">
+                <i class="card-planet"></i>
+            </li>
+            <li class="card" type="badge">
+                <i class="card-badge"></i>
+            </li>
+            <li class="card" type="planet">
+                <i class="card-planet"></i>
+            </li>
+            <li class="card open show" type="star">
+                <i class="card-star"></i>
+            </li>
+            <li class="card" type="trooper">
+                <i class="card-trooper"></i>
+            </li>
+            <li class="card" type="gun">
+                <i class="card-gun"></i>
+            </li>
+            <li class="card" type="title">
+                <i class="card-title"></i>
+            </li>
+        </ul>
+   
   </main>
   
   <script src="js/main.js"></script>

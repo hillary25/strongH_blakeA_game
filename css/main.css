@@ -5,3 +5,47 @@
 {
 	display: none;
 }
+
+#container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(../assets/scene.jpeg);
+}
+
+h1
+{
+	font-family: Arial, Helvetica, Sans-serif;
+	text-align: center;
+}
+
+
+.deck
+{
+	width: 50%;
+	background: #FCE6BF;
+	border-radius: 8px;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 0 4px;
+}
+
+.deck .card
+{
+	height: 120px;
+	width: 120px;
+	margin: 10px;
+	background: #333333;
+	font-size: 0;
+	color: #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
