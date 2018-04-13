@@ -1,0 +1,50 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473 473">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4b79ad;
+      }
+
+      .cls-2 {
+        font-size: 180px;
+      }
+
+      .cls-2, .cls-3, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: AmericanCaptain, American Captain;
+      }
+
+      .cls-3 {
+        font-size: 120px;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.06em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <title>title</title>
+  <rect class="cls-1" width="473" height="473" rx="74.07" ry="74.07"/>
+  <text class="cls-2" transform="translate(9.62 240.77)">S</text>
+  <text class="cls-2" transform="translate(65.62 378.77)">t</text>
+  <text class="cls-3" transform="translate(76.12 241.06)"><tspan class="cls-4">t</tspan><tspan class="cls-5" x="36.24" y="0">a</tspan><tspan class="cls-6" x="88.68" y="0">r</tspan><tspan x="140.64" y="0">ship</tspan></text>
+  <text class="cls-3" transform="translate(117.12 379.06)">ROOPE<tspan class="cls-7" x="251.04" y="0">R</tspan><tspan x="303" y="0">S</tspan></text>
+  <polygon class="cls-8" points="427.5 92.85 432.1 102.17 442.39 103.66 434.94 110.92 436.7 121.16 427.5 116.33 418.3 121.16 420.06 110.92 412.61 103.66 422.9 102.17 427.5 92.85"/>
+  <polygon class="cls-8" points="448.82 121.72 451.62 137.88 466.52 144.73 452.01 152.39 450.1 168.68 438.34 157.25 422.25 160.46 429.49 145.74 421.47 131.43 437.7 133.77 448.82 121.72"/>
+  <polygon class="cls-8" points="399.9 128.63 404.26 135.64 412.5 136.02 407.18 142.33 409.37 150.28 401.72 147.17 394.83 151.71 395.43 143.48 388.99 138.33 396.99 136.35 399.9 128.63"/>
+</svg>
