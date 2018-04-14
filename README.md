@@ -19,5 +19,5 @@ Ariana Blake and Hillary Strong. For Authoring class. 2018.
 
 
 <b>Icons:</b> Designed on Illustrator by us, inspiration from the movie.</br>
-<b>Font:</b> Called Black Ops One</br>
+<b>Font:</b> Black Ops One.</br>
 <b>Background:</b> http://www.icollector.com/Rodger-Young-digital-armature-model-and-motion-control-miniatures-from-Starship-Troopers_i8632951
