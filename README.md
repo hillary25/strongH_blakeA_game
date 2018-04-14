@@ -18,6 +18,6 @@ This game uses an HTML page, as well as CSS and JavaScript for functionality. Th
 Ariana Blake and Hillary Strong. For Authoring class. 2018.
 
 
-<b>Icons:</b> Designed on Illustrator by us, inspiration from the movie.
-<b>Font:</b> Found online.
+<b>Icons:</b></br> Designed on Illustrator by us, inspiration from the movie.
+<b>Font:</b></br> Found online.
 <b>Background:</b> http://www.icollector.com/Rodger-Young-digital-armature-model-and-motion-control-miniatures-from-Starship-Troopers_i8632951
