@@ -149,23 +149,29 @@
 
 	function resetGame() {
 		score = 0;
-		gameGrid.sort(() => 0.5 - Math.random());
+		document.querySelector('h4').textContent = `Score: ${score}`;
 
 		firstGuess = '';
 		secondGuess = '';
 		count = 0;
 		previousTarget = null;
 
+		var selected = document.querySelectorAll('.selected');
 		selected.forEach(card => {
 			card.classList.remove('selected');
 		});
 
+		var selected = document.querySelectorAll('.match');
 		selected.forEach(card => {
 			card.classList.remove('match');
 		});
 
 		resetScreen.classList.remove('show-screen');
+		init();
+	}
 
+	function init() {
+		gameGrid.sort(() => 0.5 - Math.random());
 	}
 
 
@@ -173,4 +179,6 @@
 	//Event Handling
 	grid.addEventListener('click', selectCard);
 	resetButton.addEventListener('click', resetGame);
+
+	init();
 })();
