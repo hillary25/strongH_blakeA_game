@@ -47,7 +47,7 @@
 		count = 0,
 		previousTarget = null,
 		delay = 1200,
-		score = 15,
+		score = 0,
 		resetScreen = document.querySelector('.reset-screen'),
 		resetButton = resetScreen.querySelector('button');
 
@@ -81,6 +81,10 @@
 		selected.forEach(card => {
 			card.classList.add('match');
 			score ++;
+			if (score === 16) {
+				debugger;
+				showResetScreen();
+			}
 			document.querySelector('h4').textContent = `Score: ${score}`;
 		});
 	}
@@ -123,13 +127,10 @@
 			if (firstGuess !== '' && secondGuess !== '') {
 				//and if they match
 				if (firstGuess === secondGuess) {
-					if (score === 16) {
-						debugger;
-						showResetScreen();
-					} else {
+
 						//run the match function and flip the cards
 						setTimeout(match, delay);
-					}
+					} else {
 				}
 					//otherwise reset the guesses and flip the cards
 					setTimeout(resetGuesses, delay);
@@ -142,12 +143,34 @@
 	function showResetScreen(message) {
 		//user has won, reset stuff and start game over
 		console.log('you win');
-		resetScreen.classList.add('.show-screen');
-		resetScreen.querySelector('h3').textContent = message;
+		resetScreen.classList.add('show-screen');
+		//resetScreen.querySelector('h3').textContent = message;
 	}
+
+	function resetGame() {
+		score = 0;
+		gameGrid.sort(() => 0.5 - Math.random());
+
+		firstGuess = '';
+		secondGuess = '';
+		count = 0;
+		previousTarget = null;
+
+		selected.forEach(card => {
+			card.classList.remove('selected');
+		});
+
+		selected.forEach(card => {
+			card.classList.remove('match');
+		});
+
+		resetScreen.classList.remove('show-screen');
+
+	}
+
 
 
 	//Event Handling
 	grid.addEventListener('click', selectCard);
-	//resetButton.addEventListener('click', resetGame);
+	resetButton.addEventListener('click', resetGame);
 })();
