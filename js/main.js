@@ -39,7 +39,7 @@
 	],
 		  game = document.querySelector('#game'),
 		  grid = document.querySelector('.grid');
-	
+
 	let gameGrid = cards.concat(cards),
 		cardSet = document.querySelector('.card'),
 		firstGuess = '',
@@ -47,10 +47,10 @@
 		count = 0,
 		previousTarget = null,
 		delay = 1200,
-		score = 0,
+		score = 15,
 		resetScreen = document.querySelector('.reset-screen'),
 		resetButton = resetScreen.querySelector('button');
-	
+
 	gameGrid.sort(() => 0.5 - Math.random());
 
 	//Card Creation Loop
@@ -60,11 +60,11 @@
 		const card = document.createElement('div');
 		card.classList.add('card');
 		card.dataset.name = name;
-		
+
 		//front of cards
 		const front = document.createElement('div');
 		front.classList.add('front');
-		
+
 		//back of cards (with image)
 		const back = document.createElement('div');
 		back.classList.add('back');
@@ -84,7 +84,7 @@
 			document.querySelector('h4').textContent = `Score: ${score}`;
 		});
 	}
-	
+
 	//Reset Guesses Function
 	const resetGuesses = () => {
 		firstGuess = '';
@@ -97,7 +97,7 @@
 			card.classList.remove('selected');
 		});
 	};
-	
+
 	//Card Selection Function
 	function selectCard() {
 		const clicked = event.target;
@@ -124,6 +124,7 @@
 				//and if they match
 				if (firstGuess === secondGuess) {
 					if (score === 16) {
+						debugger;
 						showResetScreen();
 					} else {
 						//run the match function and flip the cards
@@ -136,12 +137,15 @@
 			previousTarget = clicked;
 		}
 	}
-	
+
+	//Reset screen
 	function showResetScreen(message) {
 		//user has won, reset stuff and start game over
-		resetScreen.classList.add('reset');
+		console.log('you win');
+		resetScreen.classList.add('.show-screen');
 		resetScreen.querySelector('h3').textContent = message;
 	}
+
 
 	//Event Handling
 	grid.addEventListener('click', selectCard);
