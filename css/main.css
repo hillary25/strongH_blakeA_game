@@ -18,7 +18,7 @@ body
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url(../assets/background.jpg) no-repeat;
+	background: url(../images/background.jpg) no-repeat;
 	margin: 0 auto;
 	width: 1246px;
 	height: 780px;
