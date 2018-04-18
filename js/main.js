@@ -1,3 +1,5 @@
+//Based off tutorial https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/
+
 //JavaScript Document
 (() => {
 	console.log('Starship Troopers game fired!');
