@@ -2,9 +2,22 @@
 (() => {
 	console.log('Starship Troopers game fired!');
 
-	//Variables
-	//Array of Cards
-	const cards = [{
+	var cards,
+		gameGrid,
+		cardSet,
+		firstGuess = '',
+		secondGuess = '',
+		count = 0,
+		previousTarget = null,
+		delay = 1200,
+		score = 0,
+		resetScreen = document.querySelector('.reset-screen'),
+		resetButton = resetScreen.querySelector('button');
+
+
+//Array of Cards
+function init() {
+ cards = [{
 		'name': 'badge',
 		'img': 'images/badge.svg',
 		},
@@ -40,18 +53,15 @@
 		  game = document.querySelector('#game'),
 		  grid = document.querySelector('.grid');
 
-	let gameGrid = cards.concat(cards),
-		cardSet = document.querySelector('.card'),
-		firstGuess = '',
-		secondGuess = '',
-		count = 0,
-		previousTarget = null,
-		delay = 1200,
-		score = 0,
-		resetScreen = document.querySelector('.reset-screen'),
-		resetButton = resetScreen.querySelector('button');
 
+
+		gameGrid = cards.concat(cards),
+		cardSet = document.querySelector('.card'),
+
+  //Shuffle cards
 	gameGrid.sort(() => 0.5 - Math.random());
+
+
 
 	//Card Creation Loop
 	gameGrid.forEach(item => {
@@ -75,6 +85,11 @@
 		card.appendChild(back);
 	});
 
+	grid.addEventListener('click', selectCard);
+	resetButton.addEventListener('click', resetGame);
+	debugger;
+	}
+
 	//Match Function
 	const match = () => {
 		selected = document.querySelectorAll('.selected');
@@ -82,7 +97,7 @@
 			card.classList.add('match');
 			score ++;
 			if (score === 16) {
-				debugger;
+                //debugger;
 				showResetScreen();
 			}
 			document.querySelector('h4').textContent = `Score: ${score}`;
@@ -144,7 +159,6 @@
 		//user has won, reset stuff and start game over
 		console.log('you win');
 		resetScreen.classList.add('show-screen');
-		//resetScreen.querySelector('h3').textContent = message;
 	}
 
 	function resetGame() {
@@ -167,18 +181,15 @@
 		});
 
 		resetScreen.classList.remove('show-screen');
+		cards=[];
+
+		// remove all the cards
+		while (grid.firstChild) {
+			grid.removeChild(grid.firstChild);
+		}
+
 		init();
 	}
-
-	function init() {
-		gameGrid.sort(() => 0.5 - Math.random());
-	}
-
-
-
-	//Event Handling
-	grid.addEventListener('click', selectCard);
-	resetButton.addEventListener('click', resetGame);
 
 	init();
 })();
